@@ -30,10 +30,20 @@ class HomePage extends GetView<HomeController> {
             Center(
               child: ElevatedButton(
                   onPressed: () {
-                    controller.getData();
+                    controller.getInfo();
                   },
                   child: const Text("API")),
             ),
+            GetBuilder<HomeController>(
+                init: HomeController(),
+                builder: (controller) => Center(
+                        child: Column(
+                      children: [
+                        Text(controller.model.name.toString()),
+                        Text(controller.model.host.toString()),
+                        Text(controller.model.description.toString()),
+                      ],
+                    ))),
           ],
         ));
   }
