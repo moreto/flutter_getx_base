@@ -1,1 +1,1 @@
-# getx_base
+# flutter_getx_base
