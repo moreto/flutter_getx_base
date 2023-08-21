@@ -27,6 +27,13 @@ class HomePage extends GetView<HomeController> {
                   },
                   child: const Text("Go back!")),
             ),
+            Center(
+              child: ElevatedButton(
+                  onPressed: () {
+                    controller.getData();
+                  },
+                  child: const Text("API")),
+            ),
           ],
         ));
   }

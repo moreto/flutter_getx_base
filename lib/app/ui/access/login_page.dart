@@ -12,8 +12,8 @@ class LoginPage extends GetView<LoginController> {
   @override
   Widget build(BuildContext context) {
     final _formKey = GlobalKey<FormState>();
-    TextEditingController emailController = TextEditingController();
-    TextEditingController passwordController = TextEditingController();
+    TextEditingController emailController = TextEditingController(text: 'mmoreto@gmail.com');
+    TextEditingController passwordController = TextEditingController(text: '123');
 
     Log.print(super.runtimeType.toString(), titulo: kAppName);
 
