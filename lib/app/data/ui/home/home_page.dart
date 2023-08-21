@@ -6,7 +6,8 @@ import '../../../commons/log.dart';
 import 'home_controller.dart';
 
 class HomePage extends GetView<HomeController> {
-  const HomePage({Key? key}) : super(key: key);
+  const HomePage( this.email, {Key? key}) : super(key: key);
+  final String email;
 
   @override
   Widget build(BuildContext context) {
@@ -14,6 +15,19 @@ class HomePage extends GetView<HomeController> {
 
     Get.put(HomeController());
 
-    return const Placeholder();
+    return Scaffold(
+        appBar: AppBar(title: const Text('Home Page')),
+        body: Column(
+          children: [
+            Text(email),
+            Center(
+              child: ElevatedButton(
+                  onPressed: () {
+                    Navigator.pop(context);
+                  },
+                  child: const Text("Go back!")),
+            ),
+          ],
+        ));
   }
 }
