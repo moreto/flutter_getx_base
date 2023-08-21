@@ -1,6 +1,7 @@
-import 'package:flutter_getx_base/app/data/ui/access/login_controller.dart';
-import 'package:flutter_getx_base/app/data/ui/home/home_controller.dart';
 import 'package:get/get.dart';
+
+import '../ui/access/login_controller.dart';
+import '../ui/home/home_controller.dart';
 
 class DefaultBindings extends Bindings {
   @override

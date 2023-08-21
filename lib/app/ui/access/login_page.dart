@@ -1,9 +1,9 @@
 import 'package:flutter/material.dart';
-import 'package:flutter_getx_base/app/data/routes/pages.dart';
 import 'package:get/get.dart';
 
-import '../../../commons/constants.dart';
-import '../../../commons/log.dart';
+import '../../commons/constants.dart';
+import '../../commons/log.dart';
+import '../../routes/pages.dart';
 import 'login_controller.dart';
 
 class LoginPage extends GetView<LoginController> {
@@ -20,7 +20,7 @@ class LoginPage extends GetView<LoginController> {
     Get.put(LoginController());
 
     return Scaffold(
-      appBar: AppBar(title: Text('Login')),
+      appBar: AppBar(title: const Text('Login')),
       body: Form(
         key: _formKey,
         child: Padding(

@@ -1,12 +1,12 @@
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
 
-import '../../../commons/constants.dart';
-import '../../../commons/log.dart';
+import '../../commons/constants.dart';
+import '../../commons/log.dart';
 import 'home_controller.dart';
 
 class HomePage extends GetView<HomeController> {
-  const HomePage( this.email, {Key? key}) : super(key: key);
+  const HomePage(this.email, {Key? key}) : super(key: key);
   final String email;
 
   @override

@@ -2,7 +2,7 @@ import 'package:flutter/material.dart';
 import 'package:get/get.dart';
 
 import 'app/bindings/default_bindings.dart';
-import 'app/data/routes/pages.dart';
+import 'app/routes/pages.dart';
 
 void main() {
   runApp(GetMaterialApp(
